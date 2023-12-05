@@ -6,3 +6,21 @@ body {
   font-family: var(--font-symtext), sans-serif;
   color: white;
 }
+
+.text-neon {
+  animation: pulsate 1.5s infinite alternate;
+}
+
+/* Flickering animation */
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow: 0 0 2px #fff, 0 0 9px #fff, 0 0 15px #fff, 0 0 32px #ff0080,
+      0 0 68px #ff0080, 0 0 78px #ff0080, 0 0 80px #ff0080, 0 0 120px #ff0080;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow: 0 0 2px #fff, 0 0 7px #fff, 0 0 12px #fff, 0 0 26px #ff0080,
+      0 0 60px #ff0080, 0 0 68px #ff0080, 0 0 72px #ff0080, 0 0 112px #ff0080;
+  }
+}

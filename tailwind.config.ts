@@ -13,6 +13,9 @@ const config: Config = {
         secondary: "#FF0080",
         tertiary: "#2E64FF",
       },
+      boxShadow: {
+        neon: "0px 0px 25px 5px #00ff01",
+      },
       fontFamily: {
         heading: "var(--font-symtext)",
       },
