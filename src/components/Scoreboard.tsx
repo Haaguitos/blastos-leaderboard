@@ -55,8 +55,10 @@ export default function Scoreboard() {
             <div
               key={index}
               className={`flex flex-row p-4 gap-2 2xl:text-base ${
-                index < 2 && `col-start-1 col-end-3 text-4xl 2xl:col-auto`
-              } ${index === 1 && `text-2xl`}`}
+                index === 1 && `col-start-1 col-end-3 text-2xl 2xl:col-auto`
+              } ${
+                index === 0 && `col-start-1 col-end-3 text-4xl 2xl:col-auto`
+              }`}
             >
               <span className={`${rankingColor(index + 1)}`}>#{index + 1}</span>
               <span>{player.name}</span>
