@@ -20,7 +20,7 @@ export default function Scoreboard() {
           {
             params: {
               amount: 50,
-              version: "a0.8.0df",
+              version: "a0.8.0",
               platform: "pc",
             },
           }
